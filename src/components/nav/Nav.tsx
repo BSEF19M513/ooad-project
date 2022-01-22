@@ -1,0 +1,34 @@
+import Link from 'next/link';
+
+type Link = {
+  url: string;
+  name: string;
+};
+
+type NavProps = {
+  links: Link[];
+};
+
+export const Nav = ({links}: NavProps) => {
+  return (
+    <div>
+      <ul
+        style={{
+          display: 'flex',
+          gap: '20px',
+          color: '#0070f3',
+        }}
+      >
+        {links.map((link, i) => {
+          return (
+            <li key={link.name + i}>
+              <Link href={link.url}>
+                <a>{link.name}</a>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+};
