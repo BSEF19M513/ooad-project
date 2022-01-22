@@ -4,12 +4,12 @@ import {Nav} from '../nav';
 
 const navLinksForTeachers = [
   {
-    url: '/teacher/attendance',
+    url: '/teacher/addattendence',
     name: 'Mark Attendance',
   },
   {
-    url: 'teacher/grades',
-    name: 'Grates',
+    url: '/teacher/studentgrades',
+    name: 'Student Grades',
   },
 ];
 
