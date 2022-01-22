@@ -1,10 +1,10 @@
 import {Button} from '@nextui-org/react';
 import {styled} from '@stitches/react';
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 import {CheckBox} from '../../src/components/checkbox';
 import {students} from '../../src/data/studentList';
 
-const Row = styled('div', {
+export const Row = styled('div', {
   display: 'grid',
   gridTemplateColumns: '100px 1fr 1fr 50px',
   alignItems: 'center',
@@ -76,11 +76,9 @@ const TeacherAddAttendence = () => {
                   onCheckedChange={() => {
                     setAttendence((list) => {
                       return list.map((l) => {
-                        if (l.rollNumber === student.rollNumber) {
-                          return {...l, attendence: !l.attendence};
-                        } else {
-                          return l;
-                        }
+                        return l.rollNumber === student.rollNumber
+                          ? {...l, attendence: !l.attendence}
+                          : l;
                       });
                     });
                   }}

@@ -1,5 +1,3 @@
 export const TeacherHome = () => {
-  return (
-
-  )
-}
+  return <div>teacher home page</div>;
+};
