@@ -1,18 +1,6 @@
 import {Text} from '@nextui-org/react';
 import {styled} from '@stitches/react';
-import {clear} from 'console';
 import React from 'react';
-
-// const attendence = [
-//   'present',
-//   'present',
-//   'present',
-//   'absent',
-//   'absent',
-//   'absent',
-// ];
-
-const Attendence = styled('div', {});
 
 const Row = styled('div', {
   display: 'grid',
@@ -32,7 +20,6 @@ const Section = styled('section', {
 const Box = styled('div', {});
 
 const CheckAttendence = () => {
-
   const getDate = (i: number) => {
     const date = new Date();
     const newDate = new Date(date.getTime() - i * 24 * 60 * 60 * 1000);

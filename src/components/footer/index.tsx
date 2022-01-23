@@ -16,11 +16,6 @@ export const Footer = () => {
               <a className="btn btn-dark text-light">Lorem ipsum dolor</a>
             </Link>{' '}
           </p>
-          <p className="h6">
-            <Link href="">
-              <a className="btn btn-dark text-light">Lorem ipsum dolor</a>
-            </Link>{' '}
-          </p>
         </div>
         <div className="text-light">
           <p className="h6">
@@ -33,18 +28,8 @@ export const Footer = () => {
               <a className="btn btn-dark text-light">Lorem ipsum dolor</a>
             </Link>{' '}
           </p>
-          <p className="h6">
-            <Link href="">
-              <a className="btn btn-dark text-light">Lorem ipsum dolor</a>
-            </Link>{' '}
-          </p>
         </div>
         <div className="text-light">
-          <p className="h6">
-            <Link href="">
-              <a className="btn btn-dark text-light">Lorem ipsum dolor</a>
-            </Link>{' '}
-          </p>
           <p className="h6">
             <Link href="">
               <a className="btn btn-dark text-light">Lorem ipsum dolor</a>

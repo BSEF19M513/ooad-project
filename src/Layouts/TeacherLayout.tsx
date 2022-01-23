@@ -22,7 +22,7 @@ export const TeacherLayout: FC = ({children}) => {
       css={{
         display: 'grid',
         minHeight: '100vh',
-        gridTemplateRows: '100px auto 250px',
+        gridTemplateRows: '100px auto 200px',
       }}
     >
       <Header links={links} loginpage={false} />

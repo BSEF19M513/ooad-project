@@ -26,7 +26,7 @@ export const StudentLayout: FC = ({children}) => {
       css={{
         display: 'grid',
         minHeight  : '100vh',
-        gridTemplateRows: '100px 1fr 250px',
+        gridTemplateRows: '100px 1fr 200px',
       }}
     >
       <Header links={links} loginpage={false} />
