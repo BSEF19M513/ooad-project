@@ -21,6 +21,7 @@ export const TeacherLayout: FC = ({children}) => {
     <Box
       css={{
         display: 'grid',
+        minHeight  : '100vh',
         gridTemplateRows: '100px auto 250px',
       }}
     >

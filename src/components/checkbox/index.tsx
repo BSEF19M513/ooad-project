@@ -27,12 +27,6 @@ const StyledIndicator = styled(CheckboxPrimitive.Indicator, {
 
 const CheckboxIndicator = StyledIndicator;
 
-// export type CheckboxProps = {
-//   isChecked: boolean;
-//   id: string;
-//   setIsChecked: React.Dispatch<React.SetStateAction<boolean>>;
-// };
-
 export type CheckBoxTypes = React.ComponentProps<typeof StyledCheckbox>;
 
 export const CheckBox = ({checked, onCheckedChange}: CheckBoxTypes) => {

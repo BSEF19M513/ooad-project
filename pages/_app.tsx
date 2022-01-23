@@ -8,19 +8,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function MyApp({Component, pageProps}: AppProps) {
   return (
     <NextUIProvider>
-      {Component.person === 'teacher' ? (
-        <TeacherLayout>
-          <div className="container heightContainer">
+      {
+        // @ts-ignore
+        Component.person === 'teacher' ? (
+          <TeacherLayout>
             <Component {...pageProps} />
-          </div>
-        </TeacherLayout>
-      ) : (
-        <StudentLayout>
-          <div className="container heightContainer">
+          </TeacherLayout>
+        ) : (
+          <StudentLayout>
             <Component {...pageProps} />
-          </div>
-        </StudentLayout>
-      )}
+          </StudentLayout>
+        )
+      }
     </NextUIProvider>
   );
 }

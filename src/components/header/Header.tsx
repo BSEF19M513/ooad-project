@@ -1,4 +1,3 @@
-import { Button } from '@nextui-org/react';
 import Image from 'next/image';
 import { Nav } from '../nav';
 
@@ -43,9 +42,6 @@ export const Header = ({links}: Props) => {
           <Nav links={links} />
         </div>
         <div className="logout_button" style={ { paddingRight: 20, paddingBottom: 20 } }>
-          {/* <Button bordered auto>
-            Logout
-          </Button> */}
           <button className='btn btn-dark text-light'>
             Logout
           </button>

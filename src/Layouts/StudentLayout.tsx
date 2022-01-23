@@ -5,15 +5,15 @@ import {Header} from '../components/header';
 
 const links = [
   {
-    url: '/student/checkattendence.tsx',
+    url: '/student/checkattendence',
     name: 'Check Attendance',
   },
   {
-    url: '/student/studentgrades',
+    url: '/student/grades',
     name: 'Check Grades',
   },
   {
-    url: '/student/degreeClearance.tsx',
+    url: '/student/degreeClearance',
     name: 'Degree clearance',
   },
 ];
@@ -25,7 +25,8 @@ export const StudentLayout: FC = ({children}) => {
     <Box
       css={{
         display: 'grid',
-        gridTemplateRows: '100px auto 200px',
+        minHeight  : '100vh',
+        gridTemplateRows: '100px 1fr 250px',
       }}
     >
       <Header links={links} />

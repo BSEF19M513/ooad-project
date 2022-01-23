@@ -76,7 +76,7 @@ const DegreeClearance = () => {
           border: '1px solid rgba(0,0,0,0.3)',
           marginTop: '30px',
           borderRadius: '10px',
-          marginBottom : '50px'
+          marginBottom: '50px',
         }}
       >
         <Flex>
