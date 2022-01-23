@@ -35,6 +35,7 @@ const SetStudentsGrades = () => {
   );
   return (
     <Flex css={{marginBottom: '50px'}}>
+      <div className="mb-3 mt-3" />
       <Row>
         <div>#</div>
         <div>Roll number</div>

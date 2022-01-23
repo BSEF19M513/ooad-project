@@ -6,7 +6,7 @@ export const Tick = (props: SVGProps<SVGSVGElement>) => {
       xmlns="http://www.w3.org/2000/svg"
       width="18"
       height="18"
-      viewBox="-2 -4 24 24"
+      viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="white"
       fill="none"

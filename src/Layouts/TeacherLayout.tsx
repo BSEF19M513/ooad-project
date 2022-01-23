@@ -1,6 +1,7 @@
+import {styled} from '@stitches/react';
 import {FC} from 'react';
+import {Footer} from '../components/footer';
 import {Header} from '../components/header';
-
 
 const links = [
   {
@@ -13,16 +14,26 @@ const links = [
   },
 ];
 
+const Box = styled('div', {});
+
 export const TeacherLayout: FC = ({children}) => {
   return (
-    <div
-      style={{
-        width: '1000px',
-        margin: 'auto',
+    <Box
+      css={{
+        display: 'grid',
+        gridTemplateRows: '100px auto 250px',
       }}
     >
       <Header links={links} />
-      {children}
-    </div>
+      <Box
+        css={{
+          width: '1000px',
+          margin: 'auto',
+        }}
+      >
+        {children}
+      </Box>
+      <Footer />
+    </Box>
   );
 };
