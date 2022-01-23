@@ -2,18 +2,16 @@ import {Button} from '@nextui-org/react';
 import Image from 'next/image';
 import {Nav} from '../nav';
 
-const navLinksForTeachers = [
-  {
-    url: '/teacher/addattendence',
-    name: 'Mark Attendance',
-  },
-  {
-    url: '/teacher/studentgrades',
-    name: 'Student Grades',
-  },
-];
 
-export const Header = () => {
+type Links = {
+  url: string;
+  name: string;
+};
+type Props = {
+  links: Links[];
+};
+
+export const Header = ({links}: Props) => {
   return (
     <header>
       <div
@@ -40,7 +38,7 @@ export const Header = () => {
               alt="pu logo"
             />
           </div>
-          <Nav links={navLinksForTeachers} />
+          <Nav links={links} />
         </div>
         <div className="logout_button">
           <Button bordered auto>
