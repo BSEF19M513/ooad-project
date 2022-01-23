@@ -21,11 +21,11 @@ export const TeacherLayout: FC = ({children}) => {
     <Box
       css={{
         display: 'grid',
-        minHeight  : '100vh',
+        minHeight: '100vh',
         gridTemplateRows: '100px auto 250px',
       }}
     >
-      <Header links={links} />
+      <Header links={links} loginpage={false} />
       <Box
         css={{
           width: '1000px',

@@ -4,6 +4,7 @@ import {NextUIProvider} from '@nextui-org/react';
 import {TeacherLayout} from '../src/Layouts/TeacherLayout';
 import {StudentLayout} from '../src/Layouts/StudentLayout';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {DefaultLayout} from '../src/Layouts/DefaultLayout';
 
 function MyApp({Component, pageProps}: AppProps) {
   return (
@@ -14,10 +15,15 @@ function MyApp({Component, pageProps}: AppProps) {
           <TeacherLayout>
             <Component {...pageProps} />
           </TeacherLayout>
-        ) : (
+        ) : // @ts-ignore
+        Component.person === 'student' ? (
           <StudentLayout>
             <Component {...pageProps} />
           </StudentLayout>
+        ) : (
+          <DefaultLayout>
+            <Component {...pageProps} />
+          </DefaultLayout>
         )
       }
     </NextUIProvider>

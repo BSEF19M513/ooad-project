@@ -100,4 +100,7 @@ const DegreeClearance = () => {
   );
 };
 
+
+DegreeClearance.person = 'student';
+
 export default DegreeClearance;

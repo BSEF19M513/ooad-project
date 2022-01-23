@@ -6,4 +6,6 @@ const CheckAttendence = () => {
   );
 };
 
+CheckAttendence.person = 'student';
+
 export default CheckAttendence;

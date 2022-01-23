@@ -5,31 +5,23 @@ import {Header} from '../components/header';
 
 const links = [
   {
-    url: '/student/checkattendence',
-    name: 'Check Attendance',
-  },
-  {
-    url: '/student/grades',
-    name: 'Check Grades',
-  },
-  {
-    url: '/student/degreeClearance',
-    name: 'Degree clearance',
+    url: '',
+    name: '',
   },
 ];
 
 const Box = styled('div', {});
 
-export const StudentLayout: FC = ({children}) => {
+export const DefaultLayout: FC = ({children}) => {
   return (
     <Box
       css={{
         display: 'grid',
-        minHeight  : '100vh',
+        minHeight: '100vh',
         gridTemplateRows: '100px 1fr 250px',
       }}
     >
-      <Header links={links} loginpage={false} />
+      <Header links={links} loginpage={true}/>
       <Box
         css={{
           width: '1000px',
