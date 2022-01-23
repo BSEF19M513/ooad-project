@@ -17,7 +17,7 @@ const Login = () => {
           <input className="btn btn-success mt-2 mb-2 text-uppercase" type="submit" value="login" />
         </div>
       </form>
-      <p className="text-end h5 text-muted">Don't have an account? <Link href="/signup"><a>CREATE ONE</a></Link></p>
+      <p className="text-end h5 text-muted">Don&apos;t have an account? <Link href="/signup"><a>CREATE ONE</a></Link></p>
     </section>
   </div>)
 }
