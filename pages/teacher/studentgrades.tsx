@@ -2,16 +2,21 @@ import {Row as RowPrimitive} from './addattendence';
 import {useState} from 'react';
 import {students} from '../../src/data/studentList';
 import {styled} from '@stitches/react';
+import {Button} from '@nextui-org/react';
 
 const Row = styled(RowPrimitive, {
-  gridTemplateColumns:
-    '50px 1fr 1fr minmax(max-content,100px) minmax(max-content,100px) minmax(max-content,100px)',
+  gridTemplateColumns: '50px 1fr 1fr repeat(3,minmax(max-content,100px))',
   gap: '20px',
 });
 
 const Input = styled('input', {
   all: 'unset',
   width: '50px',
+});
+
+const Flex = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
 });
 
 type Marks = {
@@ -21,6 +26,7 @@ type Marks = {
   setionalMarks: number;
   finalMarks: number;
 };
+
 const SetStudentsGrades = () => {
   const [marks, setMarks] = useState<Marks[]>(
     students.map((student) => {
@@ -28,13 +34,13 @@ const SetStudentsGrades = () => {
     })
   );
   return (
-    <div style={{marginBottom: '50px'}}>
+    <Flex css={{marginBottom: '50px'}}>
       <Row>
         <div>#</div>
         <div>Roll number</div>
         <div>name</div>
         <div>mid marks</div>
-        <div>setional marks</div>
+        <div>sessional marks</div>
         <div>final marks</div>
       </Row>
       <section>
@@ -66,8 +72,11 @@ const SetStudentsGrades = () => {
           );
         })}
       </section>
-    </div>
+      <Button css={{alignSelf: 'end', marginTop: '20px'}}>Submit</Button>
+    </Flex>
   );
 };
+
+SetStudentsGrades.person = 'teacher';
 
 export default SetStudentsGrades;

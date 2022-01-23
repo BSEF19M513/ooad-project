@@ -100,4 +100,6 @@ const TeacherAddAttendence = () => {
   );
 };
 
+TeacherAddAttendence.person = 'teacher'
+
 export default TeacherAddAttendence;
