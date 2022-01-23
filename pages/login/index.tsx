@@ -60,13 +60,18 @@ const Login = () => {
           />
 
           <div className="text-center">
-            <input
+            
+            {/* <input
               className="btn btn-success mt-2 mb-2 text-uppercase"
               type="submit"
-            />
+            /> */}
+            <button className="btn btn-primary mt-2 mb-2 text-uppercase">
+              <i className="bi bi-box-arrow-left text-light pe-2"></i>
+              Log In
+            </button>
           </div>
         </form>
-        <p className="text-end h5 text-muted" style={{fontSize: '0.9em'}}>
+        <p className="text-end h6 text-muted">
           Don&apos;t have an account?{' '}
           <Link href="/signup">
             <a>CREATE ONE</a>

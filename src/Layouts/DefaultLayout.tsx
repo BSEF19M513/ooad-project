@@ -7,6 +7,8 @@ const links = [
   {
     url: '',
     name: '',
+    exist: false,
+    icon: ''
   },
 ];
 

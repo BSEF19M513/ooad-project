@@ -7,14 +7,20 @@ const links = [
   {
     url: '/student/checkattendence',
     name: 'Check Attendance',
+    exist: true,
+    icon: 'bi bi-card-checklist pe-2',
   },
   {
     url: '/student/grades',
     name: 'Check Grades',
+    exist: true,
+    icon: 'bi bi-journal-check pe-2',
   },
   {
     url: '/student/degreeClearance',
     name: 'Degree clearance',
+    exist: true,
+    icon: 'bi bi-mortarboard pe-2',
   },
 ];
 

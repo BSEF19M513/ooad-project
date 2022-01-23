@@ -20,10 +20,13 @@ const Signup = () => {
         <label htmlFor="role">Role</label>
         <input className="form-control mt-2 mb-2" type="text" placeholder="TEACHER OR STUDENT" id="role" />
         <div className="text-center">
-          <input className="btn btn-success mt-2 mb-2 text-uppercase" type="submit" value="create account" />
+          <button className="btn btn-primary mt-2 mb-2 text-uppercase">
+            <i className="bi bi-person-check pe-2"></i>
+            create account
+          </button>
         </div>
       </form>
-      <p className="text-end h5 text-muted">Have an account? <Link href="/login"><a>LOG IN</a></Link></p>
+      <p className="text-end h6 text-muted">Have an account? <Link href="/login"><a>LOG IN</a></Link></p>
     </section>
   </div>)
 }

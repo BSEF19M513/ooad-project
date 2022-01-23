@@ -7,10 +7,14 @@ const links = [
   {
     url: '/teacher/addattendence',
     name: 'Mark Attendance',
+    exist: true,
+    icon: 'bi bi-card-checklist pe-2',
   },
   {
     url: '/teacher/studentgrades',
     name: 'Student Grades',
+    exist: true,
+    icon: 'bi bi-journal-check pe-2',
   },
 ];
 
