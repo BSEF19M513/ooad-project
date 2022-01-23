@@ -30,7 +30,7 @@ const Login = () => {
       console.log('student');
       router.push('/student/checkattendence');
     } else if (verifyTeacher(email) && verifyPassword(password)) {
-      router.push('/teacher');
+      router.push('/teacher/addattendence');
     } else {
       setError(true);
     }

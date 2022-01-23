@@ -41,7 +41,6 @@ const TeacherAddAttendence = () => {
         display: 'flex',
         flexDirection: 'column',
         gap: '20px',
-        // marginBottom: '50px',
       } }
     >
       <Button

@@ -1,12 +1,7 @@
-import {Text} from '@nextui-org/react';
-
 const CheckGrades = () => {
-  return (
-    <div>
-      <Text size={20}>student grades</Text>
-    </div>
-  );
+  return <div>Grades</div>;
 };
+
 
 CheckGrades.person = 'student';
 
