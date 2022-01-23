@@ -15,4 +15,7 @@ a {
 * {
   box-sizing: border-box;
 }
-
+/* height of header and footer is 392px */
+.heightContainer {
+  min-height: 332px;
+}

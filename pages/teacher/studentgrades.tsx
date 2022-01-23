@@ -1,7 +1,7 @@
-import {Row as RowPrimitive} from './addattendence';
-import {useState} from 'react';
-import {students} from '../../src/data/studentList';
-import {styled} from '@stitches/react';
+import { Row as RowPrimitive } from './addattendence';
+import { useState } from 'react';
+import { students } from '../../src/data/studentList';
+import { styled } from '@stitches/react';
 
 const Row = styled(RowPrimitive, {
   gridTemplateColumns:
@@ -22,13 +22,14 @@ type Marks = {
   finalMarks: number;
 };
 const SetStudentsGrades = () => {
-  const [marks, setMarks] = useState<Marks[]>(
+  const [ marks, setMarks ] = useState<Marks[]>(
     students.map((student) => {
-      return {...student, midMarks: 0, finalMarks: 0, setionalMarks: 0};
+      return { ...student, midMarks: 0, finalMarks: 0, setionalMarks: 0 };
     })
   );
   return (
-    <div style={{marginBottom: '50px'}}>
+    // <div style={{marginBottom: '50px'}}>
+    <div className='mb-3 mt-3'>
       <Row>
         <div>#</div>
         <div>Roll number</div>
@@ -38,33 +39,33 @@ const SetStudentsGrades = () => {
         <div>final marks</div>
       </Row>
       <section>
-        {marks.map((marks, i) => {
+        { marks.map((marks, i) => {
           return (
-            <Row key={marks.rollNumber + i}>
-              <div>{i + 1}</div>
-              <div>{marks.rollNumber}</div>
-              <div>{marks.name}</div>
+            <Row key={ marks.rollNumber + i }>
+              <div>{ i + 1 }</div>
+              <div>{ marks.rollNumber }</div>
+              <div>{ marks.name }</div>
               <Input
-                min={0}
-                max={35}
+                min={ 0 }
+                max={ 35 }
                 type="number"
-                defaultValue={marks.midMarks}
+                defaultValue={ marks.midMarks }
               />
               <Input
-                min={0}
-                max={25}
+                min={ 0 }
+                max={ 25 }
                 type="number"
-                defaultValue={marks.setionalMarks}
+                defaultValue={ marks.setionalMarks }
               />
               <Input
-                min={0}
-                max={40}
+                min={ 0 }
+                max={ 40 }
                 type="number"
-                defaultValue={marks.finalMarks}
+                defaultValue={ marks.finalMarks }
               />
             </Row>
           );
-        })}
+        }) }
       </section>
     </div>
   );
